@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif, "Oswald";
+  scroll-behavior: smooth;
+}
+body{
+  overflow-x: hidden;
+}
+.menu {
+  position: fixed;
+  width: -webkit-fill-available;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 3;
+}
+.logo {
+  margin-bottom: 70px;
+}
+.menu__links {
+  width: 1440px;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__link {
+  text-decoration: none;
+  font-size: 24px;
+  color: rgb(14, 21, 29);
+  line-height: 1.2;
+  font-family: "Mulish", sans-serif;
+  transition: all 1.5s;
+}
+.menu__link.white{
+  color: #fff;
+}
+
+.banners {
+  height: 915px;
+  width: calc(1920px*4);
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  transition: all 1.2s;
+}
+
+.out__banner{
+  position: relative;
+  max-width: 1920px;
+  height: 950px;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition:all 1.2s;
+  left: 0;
+}
+.banner_two{
+  background: #0e151d;
+}
+.banner {
+  width: 1440px;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  overflow: hidden;
+  justify-content: space-between;
+}
+.banner__text{
+  align-self: center;
+}
+.banner__title {
+  font-size: 144px;
+  font-family: "Oswald";
+  color: rgb(14, 21, 29);
+  line-height: 1.2;
+  margin-bottom: 70px;
+}
+.banner_two__title{
+    font-size: 144px;
+    font-family: "Oswald";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+  
+}
+.banner__describe{
+  font-size: 24px;
+  font-family: "Mulish";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  margin-bottom: 70px;
+}
+.banner__describe.black{
+  color: black;
+}
+
+.banner__btn {
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  color: rgb(14, 21, 29);
+  line-height: 1.2;
+  border-width: 1px;
+  border-color: rgb(14, 21, 29);
+  background: none;
+  border-style: solid;
+  position: absolute;
+  width: 194px;
+  height: 59px;
+  cursor: pointer;
+}
+.banner_two__btn{
+  color: #fff;
+  border-color: #fff;
+
+}
+.banner_two__btn.light{
+  border: none;
+  background-color: rgb(248, 210, 151);
+}
+.form {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
